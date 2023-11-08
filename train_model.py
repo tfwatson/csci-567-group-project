@@ -12,8 +12,8 @@ num_of_img_read = 64 # control the number of img used
 part = "train"  # data read "dev", "test"
 binary_label = ["positive",  "neutral", "negative"]  #label that use in clip
 model_id = "openai/clip-vit-base-patch32" # model used
-#Read the csv file
 
+#Read the csv file
 csvfile = pd.read_csv(part + "_text.csv", encoding='utf-8')
 # multi_emo_label = [f"a photo of a {Emo} audio spectrograms" for Emo in csvfile['Emotion']]
 # binary_emo_label = [f"a photo of a {Emo} audio spectrograms" for Emo in csvfile['Sentiment']]
